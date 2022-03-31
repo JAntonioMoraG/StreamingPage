@@ -1,0 +1,179 @@
+/*#0f171e;fondo
+#252e39 header
+*/
+@font-face {
+    font-family: amazon;
+    src: url(./assets/fonts/itc-officina-sans-bold.otf);
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: amazon;
+}
+.header{
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0%;
+    background-color: #252e39;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.items-header:nth-child(1){
+    padding-top: 1rem;
+}
+.items-header:nth-child(2){
+    width: 70%;
+    justify-content: baseline;
+}
+.items-header{
+    padding-left: 2.5rem;
+    padding-bottom: 1rem;
+}
+li{
+    display: inline;
+    list-style: none;
+}
+a{
+    color: rgba(242,244,246,.9);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.menu{
+    margin-left: -1rem;
+    margin-top: 1.6rem;
+}
+.menu li{
+    margin-right: .8rem;
+}
+.items-header:nth-child(3) img{
+    padding-top: 1.5rem;
+}
+.items-header:nth-child(3) img:nth-child(1){
+    margin-right: 1rem;
+}
+.items-header:nth-child(3) img:nth-child(2){
+    margin-right: .3rem;
+}
+.perfil{
+    display: block;
+    padding-top: 1.6rem;
+    color: rgba(242,244,246,.9);
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    background-color: #0f171e;
+    width: 100%;
+    padding-bottom: 2rem;
+    
+}
+.letras{
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: .2rem;
+}
+.continuarviendo{
+    margin-left: 2rem;
+}
+.originals{
+    display: flex;
+    align-items:flex-start;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: .2rem;
+}
+.letrasoriginals{
+    color: white;
+    margin-left: .5rem;
+    font-size: 21px;
+}
+.linknormales{
+    color: #79b8f3;
+    font-size: 16px;
+    margin-left: 8px;
+
+}
+.linknormales:hover{
+    color: #9bdfff;
+    text-decoration: none;
+}
+.contenedor-principal{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.contenedor-principal .flecha-izquierda,
+.contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+.contenedor-principal .flecha-izquierda{
+    left: 2rem;
+}
+.contenedor-principal .flecha-derecha{
+    right: 0;
+}
+.contenedor-principal .flecha-izquierda:hover,
+.contenedor-principal .flecha-derecha:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.contenedor-carousel{
+    width: 100%;
+    overflow: hidden;
+    padding-left: 2rem;
+    scroll-behavior: smooth;
+}
+.contenedor-carousel .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.contenedor-carousel2{
+    width: 100%;
+    overflow: hidden;
+    padding-left: 2rem;
+    scroll-behavior: smooth;
+}
+.contenedor-carousel2 .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.pelicula{
+    margin-right: .5rem;
+    transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3)
+}
+.pelicula:hover {
+	transform: scale(1.05);
+	transform-origin: center;
+}
+.continuarviendo img:hover {
+	transform: scale(1.05);
+	transform-origin: center;
+}
+@media screen and (max-width: 720px) {
+    .nav, .perfil{
+        font-size: 1rem;  
+    }
+    .items-header:nth-child(2){
+        width: auto;
+    }
+}
